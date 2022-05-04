@@ -7,7 +7,6 @@ const Node = require("./node");
 class LinkedList {
   constructor(values) {
     this.head = null;
-
     if (values && Array.isArray(values)) {
       values.reverse().forEach((value) => this.insertAtHead(value));
     }
@@ -44,7 +43,7 @@ class LinkedList {
   find(isMatch) {
     return this.findWithPrevious(isMatch)[0];
   }
-
+  // @this.tail = list.find(isMatch = (node,index) => index === list.length - 1); 
   /**
    * Insert the value after a matched node in the list.
    * By default, the value is inserted at the end of the list.
@@ -144,7 +143,7 @@ class LinkedList {
   asArray() {
     const values = [];
     let node = this.head;
-    while (node) {
+    while (node) { 
       values.push(node.value);
       node = node.next;
     }

@@ -28,7 +28,6 @@ describe("The Josephus Problem", () => {
       "Darius",
       "Eurythenes",
     ]);
-    console.log(1);
     const actual = josephus(list, 1);
     expect(actual).toEqual("Cyrus");
   });

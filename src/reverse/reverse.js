@@ -50,7 +50,3 @@ function reverseRecursive(list) {
 }
 
 module.exports = { reverseIterative, reverseRecursive };
-// const list = new LinkedList([1, 2, 3, 4, 5]);
-// const expected = new LinkedList([5, 4, 3, 2, 1]);
-// const actual = reverseRecursive(list);
-// console.log(actual.asArray());
